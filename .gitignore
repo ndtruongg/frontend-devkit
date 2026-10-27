@@ -1,0 +1,13 @@
+node_modules/
+.wxt/
+.output/
+.pnpm-store/
+coverage/
+playwright-report/
+test-results/
+*.tsbuildinfo
+*.log
+.DS_Store
+.env
+.env.*
+!.env.example

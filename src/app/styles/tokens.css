@@ -1,0 +1,51 @@
+:root {
+  color-scheme: light;
+  --ui-surface: #f7f8f5;
+  --ui-panel: #ffffff;
+  --ui-ink: #242624;
+  --ui-muted: #4b554b;
+  --ui-line: #cdd2ca;
+  --ui-border: #7b8578;
+  --ui-accent: #27583c;
+  --ui-accent-hover: #1d422d;
+  --ui-on-accent: #ffffff;
+  --ui-danger: #9e2929;
+  --ui-success: #24613a;
+  --ui-focus: #2d7149;
+  --ui-radius: 0.375rem;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --ui-surface: #1d211d;
+  --ui-panel: #252c25;
+  --ui-ink: #edf0e9;
+  --ui-muted: #b9c4b6;
+  --ui-line: #485048;
+  --ui-border: #889584;
+  --ui-accent: #9ccea7;
+  --ui-accent-hover: #b3ddbb;
+  --ui-on-accent: #15291b;
+  --ui-danger: #ffaaaa;
+  --ui-success: #a3d6b2;
+  --ui-focus: #9ccea7;
+}
+
+/* System preference also works before Vue mounts, without inline scripts. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    color-scheme: dark;
+    --ui-surface: #1d211d;
+    --ui-panel: #252c25;
+    --ui-ink: #edf0e9;
+    --ui-muted: #b9c4b6;
+    --ui-line: #485048;
+    --ui-border: #889584;
+    --ui-accent: #9ccea7;
+    --ui-accent-hover: #b3ddbb;
+    --ui-on-accent: #15291b;
+    --ui-danger: #ffaaaa;
+    --ui-success: #a3d6b2;
+    --ui-focus: #9ccea7;
+  }
+}
